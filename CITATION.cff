@@ -1,0 +1,71 @@
+cff-version: 1.2.0
+message: "If you use this playbook, please cite it as below."
+title: "Quantum-Safe Migration Playbook (Strategic & Operational Guide)"
+abstract: >-
+  A Type D Strategic Knowledge Base covering the operational risks of
+  migrating enterprise systems to post-quantum cryptography (PQC). Ten
+  sections, 42 fact IDs, structured for retrieval-augmented AI ingestion
+  and directly usable by human readers. Aligned to NIST FIPS 203 (ML-KEM),
+  FIPS 204 (ML-DSA), FIPS 205 (SLH-DSA), NSA CNSA 2.0 timelines, and
+  2026 deployment data from Cloudflare and related sources.
+
+  Version 1.2.0 introduces fact-ID structure (§N.M), explicit scope
+  boundaries, an expanded evaluation suite with distractor queries, and a
+  runtime integration guide with a system prompt ready for ingestion by
+  retrieval-augmented AI advisors (e.g., via Kimi K2.5 with the KB-Forge
+  toolkit, deposited separately by the same author).
+
+  The playbook covers strategic urgency (CNSA 2.0 timelines, compressed
+  Q-Day estimates), current deployment state (hybrid key agreement at
+  ~70% of browser-generated traffic, authentication gap), the HNDL threat model, infrastructure impact
+  (larger keys/signatures, handshake inflation), hardware bottlenecks
+  (HSMs, bootloader trust stores, proprietary ASICs), cryptographic
+  discovery (CBOM), skills, pilot design, procurement language, and
+  continuous practice.
+
+  Version 1.3.0 adds the M-26-15 filing layer: an agency migration-plan
+  template built on OMB Memorandum M-26-15 Appendix B, a federal timeline
+  one-pager verified against the primary documents (EO 14412, M-26-15),
+  and a filer's checklist for the October 22, 2026 plan deadline.
+type: publication
+authors:
+  - family-names: "Bilar"
+    given-names: "Daniel Yaacov"
+    orcid: "https://orcid.org/0000-0002-9040-6914"
+    affiliation: "Chokmah LLC"
+contributors:
+  - name: "Claude (Anthropic)"
+    affiliation: "Anthropic"
+    type: "Other"
+keywords:
+  - post-quantum cryptography
+  - PQC
+  - cryptographic migration
+  - NIST FIPS 203
+  - NIST FIPS 204
+  - NIST FIPS 205
+  - ML-KEM
+  - ML-DSA
+  - SLH-DSA
+  - CNSA 2.0
+  - harvest now decrypt later
+  - HNDL
+  - TLS 1.3
+  - hybrid key agreement
+  - CBOM
+  - cryptographic bill of materials
+  - retrieval-augmented generation
+  - knowledge base
+license: CC-BY-SA-4.0
+version: "1.3.0"
+date-released: "2026-10-13"
+doi: "10.5281/zenodo.23347471"
+url: "https://doi.org/10.5281/zenodo.19655681"
+repository-code: "https://github.com/chokmah-me/quantum-safe-migration-playbook"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.19655681"
+    description: Concept DOI (always latest)
+  - type: doi
+    value: "10.5281/zenodo.23347471"
+    description: Version DOI v1.3.0

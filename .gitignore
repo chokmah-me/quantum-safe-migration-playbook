@@ -1,0 +1,4 @@
+# Local mint receipts (not part of the public bundle)
+mint-zenodo-*.ps1
+zenodo-v*.json
+*.hashlinebak
