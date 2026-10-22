@@ -1,24 +1,26 @@
 # AGENTS.md — quantum-safe-migration-playbook
 
-## What this is
-Quantum-Safe Migration Playbook: Type D knowledge base for PQC migration, with M-26-15 filing layer.
+PQC migration knowledge base (v1.3.0): corpus, federal timeline, filer checklist, plan template. Document bundle, not a toolchain.
 
-## Layout (top level)
-- `AI_USE_STATEMENT.md`
-- `CHANGELOG.md`
-- `CITATION.cff`
-- `Corpus.md`
-- `Federal_Timeline.md`
-- `Filer_Checklist.md`
-- `INTEGRATION.md`
-- `LICENSE`
-- `Plan_Template.md`
-- `README.md`
+## Commands
+
+No build. Read `Corpus.md`. Optional maintainer mint (needs `ZENODO_TOKEN`):
+
+```powershell
+pwsh ./mint-zenodo-v1.3.0.ps1
+```
+
+RAG ingest: follow `INTEGRATION.md`, then run golden queries in `evals/` before anyone uses the system.
 
 ## Work rules
-- The shipped bundle is hash-pinned to the Zenodo deposit; any content change needs a version bump and re-mint, not an in-place edit.
 
-## Canonical docs
-- `README.md` — purpose, usage, and status.
-- `CITATION.cff` — how to cite the associated paper/record.
-- `LICENSE` — terms of use.
+- Canonical public record is the Zenodo deposit. GitHub ships the same files as the tarball.
+- Fact IDs in `Corpus.md` are the traceable claims. Do not paraphrase them into un-IDed assertions.
+- Four risk owners (hardware, latency/bandwidth, vendor readiness, discovery) are the operational claim. A plan missing one has a gap.
+
+## Pointers
+
+- `README.md` — who uses which file
+- `Corpus.md` — source of truth
+- `Federal_Timeline.md` / `Filer_Checklist.md` / `Plan_Template.md`
+- `ZENODO.md` — concept vs version
